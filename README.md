@@ -95,8 +95,8 @@ Until you add real images, social shares will just show no preview image — the
 
 ## How to update the domain
 
-1. Open `CNAME` and replace `ejazahmed.com` with your actual domain
-2. Search all HTML files for `https://ejazahmed.com` and replace with your domain
+1. Open `CNAME` and replace `datawithejaz.com` with your actual domain
+2. Search all HTML files for `https://datawithejaz.com` and replace with your domain
 3. Update `sitemap.xml` with the correct URLs
 
 ---

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/images/og/
 
-Sitemap: https://ejazahmed.com/sitemap.xml
+Sitemap: https://datawithejaz.com/sitemap.xml
