@@ -571,6 +571,14 @@ section {
   margin-bottom: var(--space-xs);
 }
 
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: var(--space-sm);
+  object-fit: cover;
+}
+
 .card-body {
   font-size: 0.9375rem;
   line-height: 1.65;
