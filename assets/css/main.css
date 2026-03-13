@@ -793,6 +793,66 @@ section {
   gap: var(--space-sm);
 }
 
+/* Agency grid */
+.agency-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+}
+
+.agency-card {
+  background: var(--color-card-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.agency-card .agency-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.agency-card .agency-network {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.agency-card .agency-detail {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  margin-top: var(--space-xs);
+}
+
+/* Client groups */
+.client-groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.client-group h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.client-group .tags-row {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Teaching grid */
+.teaching-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+}
+
 /* ============================================================
    14. COMMUNITY PAGE
    ============================================================ */
@@ -1148,6 +1208,16 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Agency */
+  .agency-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Teaching */
+  .teaching-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Projects */
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1206,6 +1276,11 @@ section {
   /* Work — 3 column case studies */
   .work-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Agency — 4 across */
+  .agency-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   /* Projects — side by side */
