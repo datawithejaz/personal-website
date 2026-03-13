@@ -450,6 +450,19 @@ section {
   max-width: 760px;
 }
 
+.hero-photo-wrap {
+  margin-bottom: var(--space-md);
+}
+
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--color-card-default);
+  border: 3px solid var(--color-divider);
+}
+
 .hero-name {
   margin-bottom: var(--space-xs);
 }
