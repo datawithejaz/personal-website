@@ -775,6 +775,11 @@ section {
   gap: var(--space-sm);
 }
 
+.case-study-card .tag--small {
+  background: var(--color-text-primary);
+  color: #FFFFFF;
+}
+
 .case-study-card .card-context {
   font-size: 0.8125rem;
   color: var(--color-text-secondary);
