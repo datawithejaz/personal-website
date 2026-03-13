@@ -423,6 +423,8 @@ section {
 .hero-photo-wrap {
   flex-shrink: 0;
   order: -1;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-photo {
@@ -468,6 +470,7 @@ section {
   position: relative;
   z-index: 1;
   max-width: 760px;
+  text-align: center;
 }
 
 .hero-name {
@@ -495,6 +498,7 @@ section {
   flex-wrap: wrap;
   gap: var(--space-xs);
   margin-bottom: var(--space-lg);
+  justify-content: center;
 }
 
 .hero-cta {
@@ -502,6 +506,7 @@ section {
   gap: var(--space-sm);
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 /* ============================================================
@@ -1227,6 +1232,18 @@ section {
   .hero-photo {
     width: 320px;
     height: 320px;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-tags {
+    justify-content: flex-start;
+  }
+
+  .hero-cta {
+    justify-content: flex-start;
   }
 
   .page-header {
