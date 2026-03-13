@@ -851,6 +851,10 @@ section {
   gap: 0.5rem;
 }
 
+.client-group .tag--small {
+  border: 1px solid var(--color-divider);
+}
+
 /* Teaching grid */
 .teaching-grid {
   display: grid;
