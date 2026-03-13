@@ -411,6 +411,15 @@ section {
   min-height: 85vh;
   display: flex;
   align-items: center;
+  background: url('../images/homepage-imagev2.png') center center / cover no-repeat;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.88);
+  z-index: 0;
 }
 
 .aurora-blob {
@@ -448,19 +457,6 @@ section {
   position: relative;
   z-index: 1;
   max-width: 760px;
-}
-
-.hero-photo-wrap {
-  margin-bottom: var(--space-md);
-}
-
-.hero-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: var(--color-card-default);
-  border: 3px solid var(--color-divider);
 }
 
 .hero-name {
