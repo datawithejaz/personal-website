@@ -1371,6 +1371,12 @@ section {
 
 @media (max-width: 767px) {
 
+  .site-header {
+    background: #FFFFFF;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   /* Show hamburger button */
   .nav-toggle-label {
     display: flex;
