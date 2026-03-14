@@ -1097,7 +1097,7 @@ section {
 .page-header--flush { padding-bottom: 0; }
 .section--flush-top { padding-top: 0; }
 .card-body--lead { font-size: 1.0625rem; max-width: 680px; margin-bottom: 1.25rem; }
-.card-body--spaced { margin-bottom: 1.5rem; }
+.card-body--spaced { margin-top: var(--space-md); margin-bottom: 1.5rem; max-width: 680px; }
 .tags-row--spaced { margin-top: 0.75rem; }
 .tag--light { background: rgba(255,255,255,0.18); color: #fff; }
 .tag--light:hover { background: rgba(255,255,255,0.3); color: #fff; }
