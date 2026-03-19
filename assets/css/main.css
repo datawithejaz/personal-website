@@ -716,6 +716,41 @@ section {
 }
 
 /* ============================================================
+   BRAND STRIP
+   ============================================================ */
+
+.brand-strip {
+  background: var(--color-card-dark);
+  padding-block: var(--space-xl);
+  text-align: center;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg) var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.brand-name {
+  font-size: clamp(0.9rem, 1.5vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(245, 245, 247, 0.6);
+  white-space: nowrap;
+}
+
+.brand-tagline {
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: rgba(245, 245, 247, 0.4);
+  margin-top: var(--space-sm);
+}
+
+/* ============================================================
    11. BUTTONS & CTAs
    ============================================================ */
 
