@@ -66,6 +66,20 @@
   --transition-slow:    400ms ease;
 }
 
+/* Dark mode — override custom properties */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:               #0A0A0A;
+    --color-text-primary:     #F5F5F7;
+    --color-text-secondary:   #A1A1A6;
+    --color-divider:          #2D2D2D;
+    --color-card-default:     #1A1A1A;
+    --color-card-dark:        #2A2A2A;
+    --shadow-card:            0 2px 20px rgba(0, 0, 0, 0.3);
+    --shadow-elevated:        0 4px 32px rgba(0, 0, 0, 0.4);
+  }
+}
+
 /* ============================================================
    2. RESET
    ============================================================ */
@@ -1366,6 +1380,50 @@ section {
 }
 
 /* ============================================================
+   DARK MODE — Component overrides
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+
+  /* Navigation */
+  .site-header {
+    background: rgba(10, 10, 10, 0.95);
+  }
+
+  /* Card-dark needs adjusted bg since variable is now used for dark surface */
+  .card--dark .card-title { color: #F5F5F7; }
+  .card--dark .card-body  { color: rgba(245, 245, 247, 0.7); }
+  .card--dark a            { color: rgba(245, 245, 247, 0.9); }
+  .card--dark a:hover      { color: #FFFFFF; }
+
+  /* Case study tags — invert for dark bg */
+  .case-study-card .tag--small {
+    background: #F5F5F7;
+    color: #0A0A0A;
+  }
+
+  /* Card-default hover shadow */
+  .card--default:hover {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Aurora blob — slightly reduced opacity on dark bg */
+  .aurora-blob {
+    background:
+      radial-gradient(ellipse at 35% 45%, rgba(26, 26, 255, 0.25) 0%, transparent 55%),
+      radial-gradient(ellipse at 70% 25%, rgba(124, 58, 237, 0.18) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(26, 26, 255, 0.1) 0%, transparent 45%),
+      radial-gradient(ellipse at 80% 75%, rgba(245, 158, 11, 0.07) 0%, transparent 40%);
+  }
+
+  /* Hero photo border */
+  .hero-photo {
+    border-color: var(--color-divider);
+  }
+
+}
+
+/* ============================================================
    MOBILE-ONLY — Navigation overlay
    ============================================================ */
 
@@ -1409,4 +1467,11 @@ section {
     display: flex;
   }
 
+}
+
+/* Mobile nav dark mode */
+@media (max-width: 767px) and (prefers-color-scheme: dark) {
+  .site-header {
+    background: #0A0A0A;
+  }
 }
