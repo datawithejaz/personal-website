@@ -30,6 +30,7 @@
 
   <meta name="author" content="Ejaz Ahmed">
   <meta name="theme-color" content="#FFFFFF">
+  <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
 
   <!-- Security headers -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' https://api.fontshare.com; font-src https://api.fontshare.com https://cdn.fontshare.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com; base-uri 'self'; form-action 'none'">
@@ -70,7 +71,7 @@
       <a href="./" class="nav-logo">Ejaz Ahmed</a>
 
       <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu" role="button" aria-expanded="false">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -94,11 +95,11 @@
           <div class="bio-photo-wrap">
             <img
               src="./assets/images/my-image.webp"
-              alt="Ejaz Ahmed"
+              alt="Ejaz Ahmed, marketing data analyst"
               class="bio-photo"
               width="200"
               height="200"
-              loading="lazy"
+              loading="eager"
             >
             <!-- Fallback shown via JS when image fails to load -->
             <div class="bio-photo-placeholder" aria-hidden="true">E</div>
@@ -128,7 +129,7 @@
         <h2 data-reveal data-delay="100">Let's talk</h2>
         <p data-reveal data-delay="200">I take on selected consulting engagements. Analytics strategy, campaign audits, Klaviyo/email builds, and team training. If you have something specific in mind, email me directly.</p>
 
-        <a href="./about.html#contact" class="contact-email-link" data-eml data-reveal data-delay="300">
+        <a href="./about.html#contact" class="contact-email-link" data-eml aria-label="Send email to Ejaz" data-reveal data-delay="300">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <span></span>
         </a>
@@ -166,7 +167,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
       </div>
-      <a href="./about.html#contact" class="footer-email" data-eml></a>
+      <a href="./about.html#contact" class="footer-email" data-eml aria-label="Send email">Get in touch</a>
       <p class="footer-copy">© 2026 Ejaz Ahmed</p>
     </div>
   </footer>
