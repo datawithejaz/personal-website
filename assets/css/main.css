@@ -592,7 +592,7 @@ section {
 
 /* Card internals */
 .card-icon {
-  font-size: 1.75rem;
+  color: var(--color-accent-primary);
   margin-bottom: var(--space-sm);
   line-height: 1;
 }
@@ -971,7 +971,7 @@ section {
 }
 
 .pillar-icon {
-  font-size: 1.25rem;
+  color: var(--color-accent-primary);
   flex-shrink: 0;
   margin-top: 2px;
 }
