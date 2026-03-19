@@ -833,32 +833,41 @@ section {
   font-weight: 500;
 }
 
-.projects-grid {
-  display: grid;
-  gap: var(--space-md);
-  grid-template-columns: 1fr;
-}
-
 .project-card {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
 
-/* Agency grid */
-.agency-grid {
-  display: grid;
-  gap: var(--space-md);
-  grid-template-columns: 1fr;
+/* Featured project — full-width accent card */
+.project-featured .card--featured {
+  padding: var(--space-xl);
+}
+
+.project-featured .card-body {
+  max-width: 680px;
+}
+
+/* Agency list — horizontal rows with dividers */
+.agency-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .agency-card {
-  background: var(--color-card-default);
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg);
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.agency-card:last-child {
+  border-bottom: none;
+}
+
+.agency-card-header {
+  flex-shrink: 0;
 }
 
 .agency-card .agency-name {
@@ -876,7 +885,6 @@ section {
 .agency-card .agency-detail {
   font-size: 0.9375rem;
   color: var(--color-text-secondary);
-  margin-top: var(--space-xs);
 }
 
 /* Client groups */
@@ -1292,18 +1300,39 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Agency */
-  .agency-grid {
-    grid-template-columns: repeat(2, 1fr);
+  /* Agency — horizontal rows at tablet+ */
+  .agency-card {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--space-lg);
+  }
+
+  .agency-card-header {
+    min-width: 220px;
+  }
+
+  /* Horizontal card layout for mentoring */
+  .cards-grid--horizontal {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid--horizontal .card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-md);
+    align-items: start;
+  }
+
+  .cards-grid--horizontal .card-image {
+    grid-row: 1 / -1;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0;
   }
 
   /* Teaching */
   .teaching-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Projects */
-  .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1362,14 +1391,13 @@ section {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Agency — 4 across */
-  .agency-grid {
-    grid-template-columns: repeat(4, 1fr);
+  /* Case studies — featured asymmetric grid */
+  .work-grid--featured {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Projects — side by side */
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .work-grid--featured .case-study-card--featured {
+    grid-column: span 2;
   }
 
   /* Content pillars — 4 across */
