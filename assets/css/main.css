@@ -737,6 +737,9 @@ section {
 .brand-logo {
   height: 28px;
   width: auto;
+  max-width: 120px;
+  min-width: 40px;
+  object-fit: contain;
   opacity: 0.6;
   filter: brightness(0) invert(1);
   transition: opacity 0.2s ease;
@@ -1535,6 +1538,8 @@ section {
 
   .brand-logo {
     height: 22px;
+    max-width: 100px;
+    min-width: 32px;
   }
 
 }
