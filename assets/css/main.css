@@ -753,7 +753,7 @@ section {
   font-size: 0.8125rem;
   font-style: italic;
   color: rgba(245, 245, 247, 0.4);
-  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 
 /* ============================================================
