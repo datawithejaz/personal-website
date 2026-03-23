@@ -734,13 +734,16 @@ section {
   margin-bottom: var(--space-md);
 }
 
-.brand-name {
-  font-size: clamp(0.9rem, 1.5vw, 1.15rem);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: rgba(245, 245, 247, 0.6);
-  white-space: nowrap;
+.brand-logo {
+  height: 28px;
+  width: auto;
+  opacity: 0.6;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.2s ease;
+}
+
+.brand-logo:hover {
+  opacity: 1;
 }
 
 .brand-tagline {
@@ -1528,6 +1531,10 @@ section {
   /* Show nav when checkbox is checked */
   .nav-toggle-input:checked ~ .nav-links {
     display: flex;
+  }
+
+  .brand-logo {
+    height: 22px;
   }
 
 }
