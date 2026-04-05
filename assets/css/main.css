@@ -905,9 +905,8 @@ section {
 }
 
 .case-study-logo {
-  height: 30px;
-  width: auto;
-  max-width: 120px;
+  height: 48px;
+  width: 48px;
   object-fit: contain;
 }
 
