@@ -1,17 +1,30 @@
 {
   "permissions": {
     "allow": [
-      "Bash(*)",
+      "Read(*)",
       "Edit(*)",
       "Write(*)",
-      "Read(*)",
       "Glob(*)",
       "Grep(*)",
-      "WebFetch(*)",
-      "WebSearch(*)",
+      "Bash(npm *)",
+      "Bash(npx playwright *)",
+      "Bash(npx serve *)",
+      "Bash(git *)",
+      "Bash(python *)",
+      "Bash(pip install *)",
+      "Bash(curl *)",
+      "Bash(node *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(cd *)",
+      "Bash(which *)",
       "Agent(*)",
-      "NotebookEdit(*)",
-      "mcp__*"
+      "WebFetch(domain:pagespeed.web.dev)",
+      "WebFetch(domain:www.googleapis.com)",
+      "WebFetch(domain:api.fontshare.com)",
+      "WebFetch(domain:cdn.fontshare.com)",
+      "WebFetch(domain:www.fontshare.com)",
+      "WebFetch(domain:datawithejaz.com)"
     ]
   }
 }
