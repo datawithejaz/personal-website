@@ -904,6 +904,14 @@ section {
   gap: var(--space-sm);
 }
 
+.case-study-logo {
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  margin-bottom: var(--space-sm);
+}
+
 .case-study-card .tag--small {
   background: var(--color-text-primary);
   color: #FFFFFF;
@@ -1521,6 +1529,11 @@ section {
   .card--dark .card-body  { color: rgba(245, 245, 247, 0.7); }
   .card--dark a            { color: rgba(245, 245, 247, 0.9); }
   .card--dark a:hover      { color: #FFFFFF; }
+
+  /* Case study logos — invert for dark bg */
+  .case-study-logo {
+    filter: brightness(0) invert(1);
+  }
 
   /* Case study tags — invert for dark bg */
   .case-study-card .tag--small {
