@@ -12,6 +12,10 @@ desktop.ini
 # Node (serve, etc.)
 node_modules/
 
+# Playwright
+playwright-report/
+test-results/
+
 # Environment
 .env
 .env.*

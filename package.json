@@ -1,0 +1,31 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Static website built with plain HTML, CSS, and JavaScript. No frameworks, no build step. Open any `.html` file in a browser to preview it locally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:ci": "playwright test --reporter=junit",
+    "serve": "serve . -l 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datawithejaz/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/datawithejaz/personal-website/issues"
+  },
+  "homepage": "https://github.com/datawithejaz/personal-website#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "serve": "^14.2.6"
+  }
+}
