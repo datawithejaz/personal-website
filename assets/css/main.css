@@ -429,6 +429,16 @@ section {
   transition: color var(--transition-default);
 }
 
+.footer-aimf {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-default);
+}
+
+.footer-aimf:hover {
+  color: var(--color-accent-primary);
+}
+
 .footer-email:hover {
   color: var(--color-accent-primary);
 }
